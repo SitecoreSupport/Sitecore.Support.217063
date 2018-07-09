@@ -46,6 +46,10 @@
       <HintPath>..\packages\SC.Sitecore.Analytics.8.2.3\lib\Sitecore.Analytics.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Sitecore.Analytics.Core, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SC.Sitecore.Analytics.Core.8.2.3\lib\Sitecore.Analytics.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Sitecore.Analytics.Model, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\SC.Sitecore.Analytics.Model.8.2.3\lib\Sitecore.Analytics.Model.dll</HintPath>
       <Private>False</Private>
