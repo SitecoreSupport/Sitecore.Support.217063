@@ -41,6 +41,12 @@ namespace Sitecore.Support.ContentTesting.Pipelines.RenderingRuleEvaluated
         {
           Item item = args.RuleContext.Item.Database.GetItem(args.RuleContext.TestId);
           TestCombination testCombination = factory.TestingTracker.GetTestCombination(item.ID.ToGuid());
+          #region Added code
+          if (testCombination == null)
+          {
+            return;
+          }
+          #endregion
           if (args.Rule.Evaluate(args.RuleContext))
           {
             TestVariable testVariable = testCombination.Testset.Variables.FirstOrDefault((TestVariable x) => x.Id.Equals(Guid.Parse(args.RuleContext.Reference.UniqueId)));
